@@ -18,9 +18,13 @@ public class AdministradorControlador {
 	private RepositorioAdministrador repositorioAdmin;
 	
 	public List <Administrador> crearAdmin(){
-		Administrador admin = new Administrador ("4dmin", "P4ssw0rd");
+		Administrador admin = new Administrador ("12345", "00000");
 		this.repositorioAdmin.save(admin);
 		return this.repositorioAdmin.findAll();
 	}
-
 }
+	
+
+
+
+

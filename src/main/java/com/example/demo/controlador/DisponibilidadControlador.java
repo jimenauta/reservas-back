@@ -23,11 +23,11 @@ public class DisponibilidadControlador {
 	
 	@GetMapping("/cargardisponibilidad")
 	public List<Disponibilidad> cargarDisponibilidad(){
-		Automovil ap2 = this.repositorioA.findByPlaca("acg-709");
-		Disponibilidad d2 = new Disponibilidad (7632L, "Medellin", "27/Marzo/2024", "09:00am", 7, ap2, 90000);
+		Automovil ap2 = this.repositorioA.findByPlaca("mmm-100");
+		Disponibilidad d2 = new Disponibilidad (7632L, "Santa Marta", "28/abril/2024", "08:00am", 8, ap2, 50000);
 		this.repositorioD.save(d2);
-		Automovil ap1 = this.repositorioA.findByPlaca("ade-567");
-		Disponibilidad d1 = new Disponibilidad (1234L, "Medellin", "28/Marzo/2024", "10:00am", 5, ap1, 90000);
+		Automovil ap1 = this.repositorioA.findByPlaca("ppp-200");
+		Disponibilidad d1 = new Disponibilidad (1234L, "Santa Marta", "29/abril/2024", "10:00am", 3, ap1, 50000);
 		this.repositorioD.save(d1);
 		
 		return this.repositorioD.findAll();

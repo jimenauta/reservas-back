@@ -18,7 +18,7 @@ public class ConsumidorControlador {
 	
 	@GetMapping("/cargarconsumidor")
 	public List<Consumidor> cargarConsumidor(){
-		Consumidor co1 = new Consumidor (10834L, "Gerson", "Ciro", "3127081415","25 / Diciembrer / 1998");
+		Consumidor co1 = new Consumidor (5555L, "Jimena", "Garzon", "3118772589","28 / Abril / 2005");
 		this.repositorioCo.save(co1);
 		return this.repositorioCo.findAll();
 	}
